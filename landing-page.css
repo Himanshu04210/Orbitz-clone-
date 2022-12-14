@@ -1,0 +1,331 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#btn{
+    position:fixed;
+    width: 90px;
+    height: 40px;
+    right: 40px;
+    bottom: 14px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: teal;
+    border: none;
+}
+#btn:hover{
+    background-color: teal;
+    color: white;
+}
+
+/*For navbar css start from here.*/
+.container {
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh");
+    background-size: cover;
+}
+
+#nav {
+    display: flex;
+    color: white;
+    background-color: rgb(4, 26, 48);
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+#nav>div>p>a{
+    text-decoration: none ;
+    color: white;
+}
+#nav>div>p>a:hover{
+    color: teal;
+}
+
+#nav>div>div>p+span >i {
+  margin: 8px;
+}
+
+#nav>div {
+    align-items: center;
+    display: flex;
+    font-size: 1em;
+}
+
+#nav>div>div {
+    display: flex;
+    align-items: center;
+}
+
+#nav>:first-child {
+    width: 30%;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#nav>:last-child {
+    width: 40%;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#nav p:hover,
+#nav>div>div>p+span:hover {
+    color: teal;
+}
+
+/*navbar is done*/
+#booking {
+    height: 55vh;
+    width: 100%;
+    margin:40px  auto;
+
+}
+#booking>div{
+    width: 92%;
+    background-color: white;
+    margin: auto;
+    padding: 40px 0px ;
+}
+#booking>div>:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+#booking>div>:nth-child(1)>p{
+    padding: 15px;
+    /* border-bottom: 1px solid grey; */
+}
+
+#booking>div>:nth-child(2)>.input{
+    display: block;
+    padding: 10px 20px;
+}
+#booking>div>:nth-child(2){
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+
+}
+#search{
+    display: block;
+    margin:30px auto;
+    width: 20%;
+    height:45px;
+    background-color: rgb(202, 27, 27);
+    border: none;
+    font-size: 25px;
+    color: white;
+}
+
+#search:hover{
+     background-color: rgb(197, 83, 83);
+}
+/* middle section of landing page*/
+
+#mid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 92%;
+    margin: auto;
+    margin-top: 40px; 
+}
+
+#mid-section>:nth-child(1) {
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_TravelAsYouAre_imgB_840x473_20220207.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+
+}
+#mid-section>:nth-child(2){
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_Rewards_imgB_840x473_20220207.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+}
+#mid-section>:nth-child(3){
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_InsiderPrices_imgB_840x473_20220207.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+}
+#mid-section>div{
+    height: 140px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.h1{
+    width: 92%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#photos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 180px;
+    gap: 25px;
+    width: 92%;
+    margin: auto;
+}
+
+
+#photos>:nth-child(1){
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh") ;
+    background-size: cover;
+}
+#photos>:nth-child(2){
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh") ;
+    background-size: cover;
+}
+#photos>:nth-child(3){
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh") ;
+    background-size: cover;
+}
+#photos>:nth-child(4){
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh") ;
+    background-size: cover;
+}
+#photos>div, #two-mens{
+    padding-bottom:9px; 
+    padding-left: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#photos>div> h1,#photos>div> p{
+    margin-bottom: 5px;
+} 
+
+#two-mens{
+    width: 91%;
+    margin: 40px auto;
+    height: 290px;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./Screenshot\ \(178\).png");
+    background-size: cover;
+}
+.heading{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 92%;
+    margin: 20px auto;
+    gap: 15px;
+}
+.heading > div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px ;
+}
+.heading>div>img{
+    float: right;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#traveling{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px;
+    gap: 20px;
+    width: 92%;
+    margin: auto;
+}
+#traveling>:nth-child(1){
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg");
+    background-size: cover;
+}
+#traveling>:nth-child(2){
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg");
+    background-size: cover;
+}
+
+#traveling>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 15px; 
+    padding: 20px;
+}
+#traveling>div>p+p{
+    width: 16%;
+    display:flex;
+    justify-content: center;
+    padding: 8px 8px;
+    background-color: white;
+    color: black;
+}
+#traveling>div>p+p,#traveling>div>h2,#traveling>div>p{
+    margin: 7px;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 0.5fr;
+    width: 92%;
+    margin: auto;
+    margin-top: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.app>:nth-child(2){
+    margin: 20px;
+}
+.app>:nth-child(2)>ul, .app>:nth-child(2)>p{
+    color: grey;
+    margin:10px;
+    font-size: .8em;
+}
+.app >div>img{
+    width: 100%;
+}
+.app>:last-child>img{
+    width: 150px;
+    height: 150px;
+}
+/*mid section is done*/
+
+/*footer section start*/
+#footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 92%;
+    margin: 20px auto;
+    gap: 10px;
+    font-size: .9em;
+}
+#footer>div{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 15px;
+    cursor: pointer;
+}
+#footer-section a{
+    display: block;
+    padding: 11px 0px;
+    text-decoration: none;
+    color: teal;
+    font-size: .8em;
+}
+#footer-section a:hover{
+    text-decoration: underline;
+}
+#footer-section{
+    width: 92%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.last{
+    padding: 30px 0px 90px 0px;
+    font-size: .8em;
+}

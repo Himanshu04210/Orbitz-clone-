@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in</title>
+    <link rel="stylesheet" href="./sign-up.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="	https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt="">
+
+    </div>
+    <div id="form-box">
+        <h1>Sign in</h1>
+        <form>
+            <input type="email" placeholder="Email address" id="email">
+            <input type="password" placeholder="Password" id="password">
+        <p>By creating an account, I agree to the Orbitz <a href="https://www.orbitz.com/lp/lg-terms" target="_blank">Terms and Conditions</a> <a href="https://www.orbitz.com/lp/lg-privacy" target="_blank">Privacy Statement</a> <a href="#">  Orbitz Rewards Terms and Conditions.</a> </p>
+        <input type="submit" value="Submit">
+        </form>
+        <p><a href="#">Forget password?</a></p>
+        <p>Don't have an account? <a href="./sign-up.html">Create one</a></p>
+    </div>
+</body>
+</html>
+
+<script>
+    let sign_up = JSON.parse(localStorage.getItem("sign-up")) || [];
+    let form = document.querySelector("form");
+    
+    checkData(sign_up)
+    function checkData(data){
+        form.addEventListener("submit", (e)=>{
+            let isThere = false;
+            e.preventDefault();
+            data.forEach((element,index)=>{
+                if((element.email == form.email.value) && (element.password == form.password.value)){
+                    isThere = true;
+                }
+            })
+            if(isThere == true){
+                alert("Login Successful");
+            }else{
+                alert("Wrong Credetials");
+            }
+        })
+    }
+</script>

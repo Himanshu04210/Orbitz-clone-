@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./sign-up.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="	https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt="">
+
+    </div>
+    <div id="form-box">
+    <h1> Create an account</h1>
+    <form>
+        <input type="email" placeholder="Email address" id="email">
+        <input type="text" placeholder="First name" id="name">
+        <input type="text" placeholder="Last name" id="">
+        <input type="password" placeholder="Create a strong password" id="password">
+        
+        <p>By creating an account, I agree to the Orbitz <a href="https://www.orbitz.com/lp/lg-terms" target="_blank">Terms and Conditions</a> <a href="https://www.orbitz.com/lp/lg-privacy" target="_blank">Privacy Statement</a> <a href="#">  Orbitz Rewards Terms and Conditions.</a> </p>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Already have an account? <a href="./sign-in.html">Sign in</a></p>
+</div>
+</body>
+</html>
+
+<script>
+    let form = document.querySelector("form");
+    let sign_up = JSON.parse(localStorage.getItem("sign-up")) || [];
+    form.addEventListener("submit", (e)=>{
+        let obj = {
+            email: form.email.value,
+            password: form.password.value,
+            name: form.name.value,
+        };
+        sign_up.push(obj);
+        localStorage.setItem("sign-up" , JSON.stringify(sign_up));
+        alert("Sign up successful");
+    })
+</script>
