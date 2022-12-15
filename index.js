@@ -242,6 +242,3 @@ let arrObject = [
 
 ]
 
-
-
-
