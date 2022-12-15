@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 90%;
+    display: grid;
+    grid-template-columns: .6fr 2.4fr;
+    cursor: pointer;
+    /* grid-template-rows: ; */
+    border-top: .5px solid grey;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.filter>.filter-by, .filter>div{
+    font-size: 1.2em;
+    margin: 10px 0px;
+}
+.filter>h3, .filter>h4{
+    
+    text-align: center;
+}
+
+
+#display>a{
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+#display>a>div{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   margin: 30px;
+   align-items: center;
+
+}
+#display>a>div>:nth-child(2){
+    margin: 15px;
+}
+#display>a>div>:nth-child(2)>h2 , #display>a>div>:nth-child(2)>p{
+    margin: 8px;
+}
+
+
+#display>a>div img{
+    width: 250px;
+    height: 250px;
+    margin-right: 20px; 
+}
+
+.mapouter{
+    width: 150px;
+    height: 150px;
+}
