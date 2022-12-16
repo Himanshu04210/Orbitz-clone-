@@ -239,9 +239,23 @@ let arrObject = [
         rating: 8.0,
         price: 147,
     }
+    ,
+    {
+        image: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/13000000/12300000/12294000/12293981/7b7ce0cd_b.jpg", 
+        name: "Renaissace",
+        id: 31,
+        location: "Delhi",
+        rating: 9.2,
+        price: 92
+    },
+    {
+        image: "https://images.trvl-media.com/hotels/76000000/75850000/75847500/75847429/f2793be5.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        name: "JC Guest House", 
+        id: 32,
+        location: "Delhi",
+        rating: 4.9,
+        price:16,
+    },
 
 ]
-
-
-
 

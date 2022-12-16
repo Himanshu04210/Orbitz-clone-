@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
 }
 
 #btn{
@@ -106,6 +106,9 @@
     gap: 20px;
 
 
+}
+#searchPageLink{
+    text-decoration: none;
 }
 #search{
     display: block;
