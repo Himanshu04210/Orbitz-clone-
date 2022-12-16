@@ -1,62 +1,95 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Open Sans, Arial, Helvetica, sans-serif;
 }
 
-.main{
+.main {
     width: 90%;
     display: grid;
     grid-template-columns: .6fr 2.4fr;
-    cursor: pointer;
     /* grid-template-rows: ; */
     border-top: .5px solid grey;
 }
 
-.filter{
+.filter {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
-.filter>.filter-by, .filter>div{
+
+.filter>.filter-by,
+.filter>div {
     font-size: 1.2em;
     margin: 10px 0px;
 }
-.filter>h3, .filter>h4{
-    
+
+ 
+.filter>h3{
+    display: block;
     text-align: center;
 }
+.filter>a{
+    display: block;
+    border: 1px solid red;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0px;
+    margin-bottom: 8px;
+    color: black;
+    border: none;
+}
+.filter>a:hover{
+    color: teal;
 
-
-#display>a{
+}
+#display {
     display: block;
     text-decoration: none;
     color: black;
 
 }
-#display>a>div{
+
+#display>div {
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-   margin: 30px;
-   align-items: center;
+    margin: 30px;
+    align-items: center;
 
 }
-#display>a>div>:nth-child(2){
+#display>div>a>img{
+    width: 100%;
+    height: 100%;
+}
+#display>div>:nth-child(2) {
     margin: 15px;
 }
-#display>a>div>:nth-child(2)>h2 , #display>a>div>:nth-child(2)>p{
-    margin: 8px;
+
+#display>div>:nth-child(2)>h2,
+#display>div>:nth-child(2)>p,
+#display>div>:nth-child(2)>button {
+    margin-top: 8px;
+}
+#display>div>:nth-child(2)>button {
+    padding: 6px;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color:#BF360C;
+    border: none;
+    color: white;
+}
+#display>div>:nth-child(2)>button:hover{
+    background-color: teal;
 }
 
 
-#display>a>div img{
+#display>div img {
     width: 250px;
     height: 250px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
-.mapouter{
-    width: 150px;
-    height: 150px;
+.filter>select{
+    cursor: pointer;
 }

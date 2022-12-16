@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Later</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./search.css">
+    <link rel="stylesheet" href="./book-later.css">
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <a href="./index.html">
+                <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="logo">
+            </a>
+            <div>
+                <p>More travel</p>
+                <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+            </div>
+        </div>
+        <div>
+            <p>Espanol</p>
+            <p>List your property</p>
+            <p>Support</p>
+            <p>Trips</p>
+            <p id="sign-in"><a href="./sign-in.html">Sign in</a></p>
+        </div>
+    </div>
+    <div id="display">
+
+    </div>
+    <div>
+        <h1>Fill your details</h1>
+        
+    </div>
+</body>
+</html>
+<script>
+    let display = document.getElementById("display");
+    let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+    displayData(cartData);
+    function displayData(data) {
+        display.innerHTML = null;
+        data.forEach((element, index) => {
+            let main_div = document.createElement("div");
+            let anchor = document.createElement("a");
+            anchor.setAttribute("href", "./clickPage.html");
+            let image_div = document.createElement("div");
+            let image = document.createElement("img");
+            image.setAttribute("src", element.image);
+            image_div.append(image);
+            anchor.append(image_div);
+            let data_div = document.createElement("div");
+            let name = document.createElement("h2");
+            name.setAttribute("class", "hotel-name");
+            name.innerText = element.name;
+            let place = document.createElement("p");
+            place.innerText = element.location;
+            let rating = document.createElement("p");
+            rating.innerText = element.rating;
+            let price = document.createElement("h2");
+            price.innerText = "Price  " + "$" + element.price;
+            let description = document.createElement("p");
+            description.innerText = "Descrition:- Upscale Hotel Near Airports, Metro, Bussiness Hubs, Shopping Mall of the City Book 3 days in Advance and get 10% discount and enjoy the view."
+            let anchor_link = document.createElement("a");
+            anchor_link.setAttribute("id", "anchor_link");
+            anchor_link.setAttribute("href", "./payment.html");
+            let reserveButton = document.createElement("button");
+            reserveButton.innerText = "Reserve Room Now";
+            anchor_link.append(reserveButton);
+            reserveButton.setAttribute("class", "reserveButton");
+            reserveButton.addEventListener("click", ()=>{
+
+            })
+            
+            let removeButton = document.createElement("button");
+            removeButton.setAttribute("class", "removeButton");
+            removeButton.innerText = "Remove from here";
+            removeButton.addEventListener("click", ()=>{
+                data.splice(index , 1);
+                localStorage.setItem("cartData", JSON.stringify(cartData));
+                displayData(cartData);
+            })
+            
+            data_div.append(name, place, rating, description, price, anchor_link, removeButton);
+            main_div.append(anchor, data_div);
+            
+            display.append(main_div);
+        })
+    }
+    
+</script>

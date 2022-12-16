@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <script src="https://kit.fontawesome.com/a8f572849d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./payment.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div>
+            <a href="./index.html">
+                <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="logo">
+            </a>
+            <div>
+                <p>More travel</p>
+                <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+            </div>
+        </div>
+        <div>
+            <p>Espanol</p>
+            <p>List your property</p>
+            <p>Support</p>
+            <p>Trips</p>
+            <p id="sign-in"><a href="./sign-in.html">Sign in</a></p>
+        </div>
+    </div>
+    <div id="full-page">
+        <h1>Payment Method</h1>
+        <div id="payment-div">
+            <div>
+                <p>
+                    <span><i class="fa-solid fa-credit-card"></i></span>
+                    <span>Credit-Card</span>
+                </p>
+                <p>
+                    <span><i class="fa-brands fa-paypal"></i></span>
+                    <span>Paypal</span>
+                </p>
+                <p>
+                    <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    <span>Net Banking</span>
+                </p>
+            </div>
+            <div>
+                <label for="">Card Owner</label>
+                <input type="text" placeholder="Card Owner Name" id="card-owner">
+            </div>
+            <div>
+                <label for="">Card Number</label>
+                <input type="number" name="" id="card-number" placeholder="Valid Card Number">
+                <span>
+                    <span><i class="fa-brands fa-cc-visa"></i></span>
+                    <span><i class="fa-brands fa-cc-amazon-pay"></i></span>
+                    <span><i class="fa-regular fa-credit-card"></i></span>
+                </span>
+            </div>
+            <div>
+                <div>
+                    <label for="">Expiration Date</label>
+                    <input type="number" placeholder="MM">
+                    <input type="number" placeholder="YY">
+                </div>
+                <div>
+                    <label for="">CVV</label>
+                    <span><i class="fa-solid fa-circle-question"></i></span>
+                    <input type="number" name="" id="" placeholder="CVV Number">
+                </div>
+            </div>
+            <div onclick="openPopup()" id="sucess-payment">Confirm Payment</div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <img src="./404-tick.png" alt="picture">
+        <h2>Thank You!</h2>
+        <p>Payment Sucessfull!</p>
+        <p>Your desired room has been reserved for you. Thank you!</p>
+        <button type="button" onclick="closePopup()">Ok</button>
+    </div>
+</body>
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("openPopup")
+    }
+    function closePopup(){
+        popup.classList.remove("openPopup")
+    }
+
+</script>
+</html>

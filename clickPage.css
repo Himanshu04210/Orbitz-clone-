@@ -59,7 +59,7 @@
 #bar>:nth-child(2){
     margin: auto 20px;
 }
-#bar>:nth-child(2)>button{
+#bar>:nth-child(2)>a>button{
     padding: 6px;
     cursor:pointer;
     background-color:#BF360C;
@@ -67,4 +67,40 @@
     font-size: 20px;
     border-radius: 4px;
     color: white;
+}
+#map{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#map>:nth-child(2){
+    width: 25%;
+    margin: 25px ;
+}
+.down-map>p, .down-map>h3{
+    width: 92%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    padding:5px;
+    font-weight: 900;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 600px !important;
+    height: 400px !important;
 }
