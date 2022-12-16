@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#anchor_link>button{
+    padding: 6px;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color:#BF360C;
+    border: none;
+    color: white;
+    margin: 8px 0px;
+}
+
+.removeButton {
+    float: right;
+}
