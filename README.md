@@ -9,3 +9,15 @@
 <h2>Landing Page:</h2>
 
 ![orbitz_clone_screenshot](https://github.com/Himanshu04210/broad-back-2017/assets/115461666/8a6e5405-5072-41d2-8786-7ba0c9391586)
+
+
+## Functionality
+
+<ul>
+    <li>Login and Logout</li>
+    <li>User will able to see the details of the hotel</li>
+    <li>User will able to bookmark the hotel</li>
+    <li>User will able to book the room</li>
+    <li>Make the payment</li>
+</ul>
+
