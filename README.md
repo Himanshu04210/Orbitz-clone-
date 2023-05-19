@@ -17,7 +17,7 @@
     <li>Login and Logout</li>
     <li>User will able to see the details of the hotel</li>
     <li>User will able to bookmark the hotel</li>
-    <li>User will able to book the room</li>
+    <li>User will able to book the room the hotel room</li>
     <li>Make the payment</li>
 </ul>
 
